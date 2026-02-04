@@ -1,0 +1,7 @@
+name: setup-skills-client
+description: Configures your shell environment to use this private skills registry.
+source: ydokimura/skills-registry-server
+license: MIT
+metadata:
+  author: ydokimura
+  version: '1.0.0'

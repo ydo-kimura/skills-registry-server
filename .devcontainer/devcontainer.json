@@ -1,0 +1,22 @@
+{
+  "name": "Skills Registry Server",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "args": {
+      "VARIANT": "1-22-bookworm",
+      "PNPM_VERSION": "10.28.2"
+    }
+  },
+  "forwardPorts": [
+    3000
+  ],
+  "postCreateCommand": "pnpm install",
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode"
+      ]
+    }
+  }
+}

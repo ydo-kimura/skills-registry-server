@@ -1,0 +1,46 @@
+{
+  "name": "@ydokimura/skills-registry-server",
+  "version": "1.0.0",
+  "description": "Private registry server for skills CLI",
+  "license": "MIT",
+  "main": "dist/src/index.js",
+  "bin": {
+    "skills-registry-server": "./dist/src/index.js"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "npx tsx src/index.ts",
+    "build": "tsc",
+    "start": "node dist/src/index.js",
+    "lint": "eslint . --ext .ts,.json",
+    "format": "prettier --write .",
+    "prepare": "husky"
+  },
+  "dependencies": {
+    "gray-matter": "^4.0.3",
+    "lru-cache": "^11.2.5",
+    "tsx": "^4.21.0",
+    "typescript": "^5.9.3",
+    "yaml": "^2.8.2"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.4.1",
+    "@commitlint/config-conventional": "^20.4.1",
+    "@types/node": "^25.2.0",
+    "@typescript-eslint/eslint-plugin": "^8.54.0",
+    "@typescript-eslint/parser": "^8.54.0",
+    "@vercel/node": "^5.5.28",
+    "eslint": "^8.57.0",
+    "eslint-plugin-jsonc": "^2.21.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.7",
+    "prettier": "^3.8.1"
+  }
+}
