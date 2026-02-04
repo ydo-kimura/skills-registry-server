@@ -91,6 +91,13 @@ Point the `skills` CLI to your local server using the `SKILLS_API_URL` environme
 export SKILLS_API_URL=http://localhost:3000
 ```
 
+Now you can search and add your private skills:
+
+```bash
+npx skills find deploy-skill
+npx skills add deploy-skill
+```
+
 ## Limitations
 
 - **Install Counts**: Since the CLI sends telemetry directly to Vercel, this server cannot track installation counts of private skills unless the CLI code is modified.

@@ -55,7 +55,8 @@ export SKILLS_API_URL=http://localhost:3000
 Now you can search and add your private skills:
 
 ```bash
-npx skills search deploy-skill
+npx skills find deploy-skill
+npx skills add deploy-skill
 ```
 
 ## Features
